@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Atomy Казахстан — каталог с ценами</title>
+  <meta name="description" content="Каталог продукции Atomy в Казахстане: цены для участников и до регистрации. Заказ в WhatsApp." />
+  <link rel="icon" href="logo.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Atomy">
+      <img src="logo.png" alt="atomy" width="148" height="56" />
+    </a>
+    <nav class="nav">
+      <a href="#catalog">Каталог</a>
+      <a href="#prices">Цены</a>
+      <a href="#order">Заказ</a>
+    </nav>
+    <a class="wa-header" href="https://wa.me/77473858155" target="_blank" rel="noopener">
+      WhatsApp +7 747 385 81 55
+    </a>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Официальная продукция · Казахстан</p>
+        <h1>Каталог Atomy с актуальными ценами</h1>
+        <p class="lead">
+          Каталог Atomy 2026: цены Казахстана и описания из печатного каталога, включая корейский раздел.
+          Оформите заказ в WhatsApp — подскажем набор и ответим на вопросы.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#catalog">Смотреть каталог</a>
+          <a class="btn btn-ghost" href="https://wa.me/77473858155?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C%20%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%86%D0%B8%D1%8E%20Atomy" target="_blank" rel="noopener">Написать в WhatsApp</a>
+        </div>
+        <dl class="stats">
+          <div>
+            <dt>Товаров</dt>
+            <dd id="stat-count">250</dd>
+          </div>
+          <div>
+            <dt>Категорий</dt>
+            <dd>12</dd>
+          </div>
+          <div>
+            <dt>Каталог</dt>
+            <dd>2026</dd>
+          </div>
+        </dl>
+      </div>
+      <aside class="hero-panel" id="prices">
+        <h2>Как читать цены</h2>
+        <ul class="price-legend">
+          <li>
+            <span class="tag tag-member">Для участников</span>
+            Цена после регистрации в Atomy — обычно ниже.
+          </li>
+          <li>
+            <span class="tag tag-guest">До регистрации</span>
+            Розничная цена без членства.
+          </li>
+          <li>
+            <span class="tag tag-pv">PV</span>
+            Баллы объёма для участников.
+          </li>
+        </ul>
+        <p class="panel-note">Нажмите «Заказать» на карточке — в WhatsApp сразу уйдёт название товара.</p>
+      </aside>
+    </section>
+
+    <section class="catalog" id="catalog">
+      <div class="toolbar">
+        <div class="search-wrap">
+          <label class="sr-only" for="search">Поиск</label>
+          <input id="search" type="search" placeholder="Найти товар…" autocomplete="off" />
+        </div>
+        <div class="sort-wrap">
+          <label for="sort">Сортировка</label>
+          <select id="sort">
+            <option value="popular">По популярности</option>
+            <option value="price-asc">Сначала дешевле</option>
+            <option value="price-desc">Сначала дороже</option>
+            <option value="name">По названию</option>
+          </select>
+        </div>
+      </div>
+      <div class="chips" id="chips" role="tablist" aria-label="Категории"></div>
+      <p class="result-meta" id="result-meta"></p>
+      <div class="grid" id="grid"></div>
+    </section>
+
+    <section class="order" id="order">
+      <div class="order-card">
+        <h2>Заказ и консультация</h2>
+        <p>Напишите в WhatsApp: подберём набор, расскажем про регистрацию и актуальные акции.</p>
+        <a class="btn btn-primary btn-lg" href="https://wa.me/77473858155" target="_blank" rel="noopener">+7 747 385 81 55</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <img src="logo.png" alt="" width="120" height="46" />
+    <p>Цены — прайс Atomy KZ на 4 сентября 2026. Описания — каталог Atomy 2026. Не является официальным сайтом компании Atomy.</p>
+  </footer>
+
+  <a class="fab" href="https://wa.me/77473858155" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+      <path fill="currentColor" d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.27-1.38a9.87 9.87 0 0 0 4.77 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.91-7.01zm-7.01 15.24h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.13.82.84-3.05-.2-.31a8.2 8.2 0 0 1-1.26-4.37c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.24 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.42h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.10-.23-.16-.48-.29z"/>
+    </svg>
+  </a>
+
+  <dialog class="modal" id="modal">
+    <article class="modal-inner">
+      <button class="modal-close" type="button" id="modal-close" aria-label="Закрыть">×</button>
+      <div class="modal-media">
+        <img id="modal-img" alt="" />
+      </div>
+      <div class="modal-body">
+        <p class="modal-cat" id="modal-cat"></p>
+        <h3 id="modal-title"></h3>
+        <p class="modal-promo" id="modal-promo" hidden></p>
+        <p class="modal-meta" id="modal-meta"></p>
+        <div class="prices" id="modal-prices"></div>
+        <p class="modal-desc" id="modal-desc" hidden></p>
+        <p class="modal-extra" id="modal-usage" hidden></p>
+        <p class="modal-extra" id="modal-composition" hidden></p>
+        <a class="catalog-link" id="modal-catalog" hidden target="_blank" rel="noopener">Страница в каталоге 2026</a>
+        <a class="btn btn-primary" id="modal-wa" target="_blank" rel="noopener">Заказать в WhatsApp</a>
+      </div>
+    </article>
+  </dialog>
+
+  <script src="products.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
