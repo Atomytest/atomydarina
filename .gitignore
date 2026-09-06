@@ -1,0 +1,10 @@
+catalog.pdf
+_pages/
+_ocr/
+_heyzine.html
+_build_data.py
+_merge_catalog.py
+_ocr_pages.ps1
+_unmatched.json
+__pycache__/
+.venv/
